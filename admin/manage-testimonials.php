@@ -30,8 +30,11 @@ $result = $db->query("SELECT * FROM testimonials");
 
 <h2>Add Testimonial</h2>
 <form method="post">
+    <label for="text">Name:</label>
     <input type="text" name="name" placeholder="Name" required>
+    <label for="service">Service:</label>
     <input type="text" name="service" placeholder="Service" required>
+    <label for="message">Message:</label>
     <textarea name="message" placeholder="Message" required></textarea>
     <button type="submit" name="add">Add</button>
 </form>
