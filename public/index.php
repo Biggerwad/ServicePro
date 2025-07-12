@@ -25,7 +25,7 @@
 
     <button>
     <a href="contact.php">    
-    Contact
+    Contact Us
     </a>
     </button>
     </center>

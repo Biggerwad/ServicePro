@@ -12,13 +12,7 @@
 
     <body>
         <header>
-            <h1 style="cursor:click;"> <a href="index.php">ServicePro</a> </h1>
-            <nav>
-                <a href="index.php">Home</a>
-                <a href="about.php">About Us</a>
-                <a href="services.php">Services</a>
-                <a href="contact.php">Contact</a>
-            </nav>
+            <?php include 'navbar.php'?>
         </header>
 
         <main>
