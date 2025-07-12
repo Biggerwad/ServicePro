@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: php-service
+    name: ServicePro
     env: docker
     plan: free
     dockerfilePath: ./Dockerfile
