@@ -1,4 +1,4 @@
-<?php include '../includes/header.php'; ?>
+<?php include 'includes/header.php'; ?>
 
 <section style="padding: 40px; line-height: 1.6; max-width: 800px; margin: auto;">
   <h2>Our Services</h2>
@@ -15,4 +15,4 @@
   <p>Need multiple services? Let us design a package tailored to your needs. Contact us for a free consultation.</p>
 </section>
 
-<?php include '../includes/footer.php'; ?>
+<?php include 'includes/footer.php'; ?>

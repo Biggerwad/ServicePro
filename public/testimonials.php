@@ -1,32 +1,33 @@
 <?php
-include '../includes/db.php';
+include 'includes/db.php';
 
-$stmt = $db->query("SELECT * FROM testimonials");
-$testimonials = [];
+$defaultTestimonials = [
+  [
+    "message" => "Daniel fixed our house wiring so professionally and quickly. The power hasn't flickered since!",
+    "name" => "Mrs. Linda Cole, Homeowner",
+    "service" => "Electrical Repairs"
+  ],
+  [
+    "message" => "Our office was spotless after ServicePro's cleaning. Their attention to detail is amazing!",
+    "name" => "Joseph Mensah, Small Business Owner",
+    "service" => "Office Cleaning"
+  ],
+  [
+    "message" => "My son improved dramatically in math after just two weeks of their tutoring. I'm truly impressed.",
+    "name" => "Amina Yusuf, Parent",
+    "service" => "Home Tutoring"
+  ]
+];
 
+$testimonials = $defaultTestimonials;
+
+// fetch data from DB
+$stmt = $db->query("SELECT message, name, service FROM testimonials");
 if ($stmt && $stmt->num_rows > 0) {
   while ($row = $stmt->fetch_assoc()) {
-    $testimonials[] = $row;
+    // Prepend DB testimonials to show them first
+    array_unshift($testimonials, $row);
   }
-} else {
-  // Default fallback testimonials
-  $testimonials = [
-    [
-      "message" => "Daniel fixed our house wiring so professionally and quickly. The power hasn't flickered since!",
-      "name" => "Mrs. Linda Cole, Homeowner",
-      "service" => "Electrical Repairs"
-    ],
-    [
-      "message" => "Our office was spotless after ServicePro's cleaning. Their attention to detail is amazing!",
-      "name" => "Joseph Mensah, Small Business Owner",
-      "service" => "Office Cleaning"
-    ],
-    [
-      "message" => "My son improved dramatically in math after just two weeks of their tutoring. I'm truly impressed.",
-      "name" => "Amina Yusuf, Parent",
-      "service" => "Home Tutoring"
-    ]
-  ];
 }
 ?>
 

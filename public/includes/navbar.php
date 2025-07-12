@@ -34,6 +34,7 @@
     left: 0;
   }
   .navbar ul.show {
+    padding: 1rem 0;
     display: flex;
   }
   .menu-toggle {
@@ -48,11 +49,11 @@
   <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
   <ul id="nav-menu">
-    <li><a href="../public/index.php">Home</a></li>
-    <li><a href="../public/about.php">About</a></li>
-    <li><a href="../public/services.php">Services</a></li>
-    <li><a href="../public/contact.php">Contact</a></li>
-    <li><a href="../admin/login.php">Admin</a></li>
+    <li><a href="index.php">Home</a></li>
+    <li><a href="about.php">About</a></li>
+    <li><a href="services.php">Services</a></li>
+    <li><a href="contact.php">Contact</a></li>
+    <li><a href="admin/login.php">Admin</a></li>
   </ul>
 </div>
 

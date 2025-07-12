@@ -1,9 +1,9 @@
-<?php include '../includes/header.php' ?>
+<?php include 'includes/header.php' ?>
 
 <div class="hero-img">
 
 <br>
-<img src="../assets/services.jpg" alt="hero image" height="600rem">
+<img src="assets/services.jpg" alt="hero image" height="600rem">
 </div>
 
 <section class="hero">
@@ -31,4 +31,4 @@
     </center>
 </section>
 
-<?php include '../includes/footer.php'?>
+<?php include 'includes/footer.php'?>

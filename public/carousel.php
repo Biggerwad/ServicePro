@@ -1,5 +1,5 @@
 <?php
-include '../includes/db.php';
+include 'includes/db.php';
 
 $stmt = $db->query("SELECT * FROM qualities");
 $qualities = [];

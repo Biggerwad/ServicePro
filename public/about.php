@@ -1,4 +1,4 @@
-<?php include '../includes/header.php'; ?>
+<?php include 'includes/header.php'; ?>
 
 <section style="padding: 40px; line-height: 1.6; max-width: 800px; margin: auto;">
   <h2>About ServicePro</h2>
@@ -14,4 +14,4 @@
 
 </section>
 
-<?php include '../includes/footer.php'; ?>
+<?php include 'includes/footer.php'; ?>

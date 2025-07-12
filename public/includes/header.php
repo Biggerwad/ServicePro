@@ -7,7 +7,7 @@
         <meta name="description" content="ServicePro - Our services are the best">
 
         <title>ServicePro</title>
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>

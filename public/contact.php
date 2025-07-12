@@ -1,4 +1,4 @@
-<?php include '../includes/header.php'; 
+<?php include 'includes/header.php'; 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = htmlspecialchars($_POST['name']);
@@ -117,4 +117,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <button type="submit"> Send Message </button>
 </form>
 
-<?php include '../includes/footer.php'; ?>
+<?php include 'includes/footer.php'; ?>
