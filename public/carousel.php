@@ -1,6 +1,7 @@
 <?php
 include 'includes/db.php';
 
+if ($db){
 $stmt = $db->query("SELECT * FROM qualities");
 $qualities = [];
 
@@ -8,7 +9,8 @@ if ($stmt && $stmt->num_rows > 0) {
   while ($row = $stmt->fetch_assoc()) {
     $qualities[] = $row;
   }
-} else {
+}}
+ else {
   $qualities = [
     ["title" => "Reliable", "description" => "We always show up.", "icon" => "https://cdn-icons-png.flaticon.com/512/190/190411.png"],
     ["title" => "Affordable", "description" => "Top service at low cost.", "icon" => "https://cdn-icons-png.flaticon.com/512/3135/3135715.png"],
