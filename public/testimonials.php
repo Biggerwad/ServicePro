@@ -20,7 +20,7 @@ $defaultTestimonials = [
 ];
 
 $testimonials = $defaultTestimonials;
-
+if ($db){
 // fetch data from DB
 $stmt = $db->query("SELECT message, name, service FROM testimonials");
 if ($stmt && $stmt->num_rows > 0) {
@@ -28,7 +28,7 @@ if ($stmt && $stmt->num_rows > 0) {
     // Prepend DB testimonials to show them first
     array_unshift($testimonials, $row);
   }
-}
+}}
 ?>
 
 <section class="testimonials">
